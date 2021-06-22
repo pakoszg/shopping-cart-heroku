@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+$font-family: "Roboto", sans-serif;
+$font-color: black;
+$primary: rgb(255, 255, 255);
+$secondary: rgb(108, 190, 134);
+
+$border-radius: 25px;
+
+@keyframes popUp {
+  from {
+    opacity: 0.5;
+    padding-top: 5%;
+  }
+
+  to {
+    opacity: 1;
+    padding-top: initial;
+  }
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    size: 0.9em;
+  }
+
+  to {
+    opacity: 1;
+    size: 1;
+  }
+}

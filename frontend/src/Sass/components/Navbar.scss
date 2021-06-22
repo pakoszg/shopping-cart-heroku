@@ -1,0 +1,96 @@
+.navbar-wrapper {
+  display: flex;
+  background-color: black;
+  height: 10vh;
+  align-items: center;
+}
+
+.navbar {
+  a {
+    padding: 20px;
+    color: white;
+    font-size: 1.5em;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: $secondary;
+  }
+}
+
+.sticker-icon {
+  color: $primary;
+}
+
+.sticker-icon-total {
+  position: absolute;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: fixed;
+  width: 2.5em;
+  top: 25px;
+  right: 25px;
+  background-color: black;
+  z-index: 3;
+}
+
+.svg-inline--fa.fa-stack-2x {
+  height: 2.5em;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  display: flex;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: -7px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.sticker-background {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 15px;
+  right: 20px;
+  background-color: black;
+  border-radius: 15px;
+  z-index: 2;
+}
+
+@media (max-width: 480px) {
+  .fa-stack {
+    top: 20px;
+    right: 0px;
+  }
+
+  .sticker-background {
+    width: 50px;
+    height: 50px;
+    top: 13px;
+    right: 0px;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .svg-inline--fa.fa-stack-2x {
+    height: 2em;
+    width: 2em;
+  }
+
+  .fa-stack-2x,
+  .fa-stack-1x {
+    right: 6px;
+    top: 0px;
+  }
+}

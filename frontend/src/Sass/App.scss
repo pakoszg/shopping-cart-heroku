@@ -1,0 +1,17 @@
+//import element design
+
+@import "./variables";
+@import "./elements";
+
+//import component design
+
+@import "./components/Cart";
+@import "./components/Navbar";
+@import "./components/WebshopItem";
+@import "./components/WebshopItemSingle";
+
+//import page design
+
+@import "./pages/PageNotFound.scss";
+@import "./pages/HomePage";
+@import "./pages/Webshop";

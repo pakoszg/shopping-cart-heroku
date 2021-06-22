@@ -1,0 +1,37 @@
+.single-item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  img {
+    width: 60%;
+    max-height: 500px;
+    max-width: 500px;
+  }
+}
+
+.single-item-properties {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  p,
+  h2,
+  h3,
+  button {
+    margin: 2px;
+    flex: 1 1 0;
+  }
+
+  h2,
+  h3 {
+    padding: 10px;
+  }
+
+  * {
+    text-align: center;
+  }
+}

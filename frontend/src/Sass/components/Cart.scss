@@ -1,0 +1,143 @@
+.cart {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  z-index: 5;
+  top: 0px;
+  animation-name: popUp;
+  animation-duration: 1s;
+
+  .cart-item-name > a {
+    color: $font-color;
+  }
+
+  .cart-item-name > a:hover {
+    color: $primary;
+    background-color: $secondary;
+    padding: 5px;
+    border-radius: $border-radius;
+  }
+
+  * {
+    flex: 1 1 0;
+    text-align: center;
+  }
+}
+
+.go-back a {
+  color: black;
+  background-color: white;
+}
+
+.cart-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  button {
+    align-items: center;
+  }
+  h1 {
+    padding: 60px;
+  }
+}
+
+.cart-image {
+  max-width: 60px;
+}
+
+.cart-item {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: flex-end;
+  max-height: 30px;
+  margin: 20px;
+
+  input {
+    max-width: 20px;
+    max-height: 20px;
+    border-radius: $border-radius;
+    border: 1px, solid, grey;
+    text-align: center;
+  }
+
+  input:focus-visible {
+    border-radius: $border-radius;
+    outline-color: $secondary;
+    outline-offset: 2px;
+    outline-width: 10px;
+  }
+}
+
+.cart-item-header > * {
+  font-weight: 500;
+  height: 60px;
+}
+
+.totalPrice {
+  font-size: 1.5em;
+  text-align: right;
+  margin: 30px;
+}
+
+.cart-items-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  p {
+    align-self: center;
+    font-weight: 400;
+  }
+}
+
+.icon {
+  font-size: 1.5em;
+  max-width: 30px;
+  max-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#cat-icon:hover {
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: $secondary;
+}
+
+.cart-list-empty {
+  display: grid;
+  grid-template-columns: auto auto 120px;
+  grid-template-rows: 100px;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.meow {
+  font-size: 1em;
+  animation-name: pop;
+  animation-duration: 0.1s;
+}
+
+@media (max-width: 480px) {
+  .cart-wrapper {
+    overflow-y: scroll;
+
+    h1 {
+      padding: 20px;
+    }
+  }
+  .cart-item-header {
+    display: none;
+  }
+
+  .cart-price {
+    display: none;
+  }
+}

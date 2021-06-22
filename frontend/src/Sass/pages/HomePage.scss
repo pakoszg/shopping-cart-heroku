@@ -1,0 +1,57 @@
+.homepage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.homepage-img-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  max-height: 400px;
+  margin: 40px;
+}
+
+.homepage-img-wrapper::after {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: (2560 / 1920) * 100%;
+  background: rgb(255, 255, 255);
+}
+
+/* this is the image styling */
+.homepage-img-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.homepage a {
+  color: white;
+}
+
+.homepage p {
+  text-transform: none;
+  padding: 15px;
+}
+
+.homepage .logo {
+  width: 64px;
+}
+
+.logo-wrapper {
+  display: flex;
+  margin-bottom: 20px;
+
+  img {
+    margin: 0;
+  }
+}
